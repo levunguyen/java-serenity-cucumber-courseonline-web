@@ -8,6 +8,6 @@
 </head>
 <body>
 
-Hello MR Jenkins not ok
+Hello MR Jenkins home
 </body>
 </html>
