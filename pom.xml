@@ -19,6 +19,12 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
 
 		<!-- Spring MVC support -->
 		<dependency>
@@ -124,6 +130,7 @@
 
 	<build>
 		<finalName>java-demo-ci-web</finalName>
+
 		<plugins>
 			<!-- Runs unit tests -->
 			<plugin>
@@ -157,10 +164,18 @@
 							<!-- Skips integration tests if the value of skip.integration.tests 
 								property is true -->
 							<skipTests>${skip.integration.tests}</skipTests>
+							<excludes>
+								<exclude>none</exclude>
+							</excludes>
+							<includes>
+								<include>**/*IT.java</include>
+							</includes>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
+
+
 		</plugins>
 	</build>
 
@@ -192,6 +207,7 @@
 				<skip.integration.tests>false</skip.integration.tests>
 				<skip.unit.tests>true</skip.unit.tests>
 			</properties>
+
 		</profile>
 
 	</profiles>

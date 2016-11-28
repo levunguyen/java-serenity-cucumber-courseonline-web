@@ -8,7 +8,7 @@ public class UseDaoImpl implements UserDao {
 	@Override
 	public String getUserName(String userName) throws Exception {
 		// TODO Auto-generated method stub
-		return "Nguyen";
+		return userName;
 	}
 
 }
