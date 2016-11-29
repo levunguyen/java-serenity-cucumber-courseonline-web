@@ -13,10 +13,12 @@ public class HomeController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView setupForm() {
-		System.out.println("HELLO");
+		
 		ModelAndView model = new ModelAndView("home");
 		return model;
 
 	}
+	
+	
 
 }
