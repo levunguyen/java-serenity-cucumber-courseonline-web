@@ -29,7 +29,7 @@
 			</div>
 		</div>
 		<button type="button" class="btn btn-primary" onclick="getUserName()">Get User Name</button>
-		Result
+		Result CI
 		<div id="result"></div>
 	</form>
 
