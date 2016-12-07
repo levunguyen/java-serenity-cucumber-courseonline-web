@@ -29,7 +29,7 @@ public class UserServiceImplTest {
 	
 	@Test
 	public void getUserName() throws Exception {
-		String expectedResult = "Hello Nguyen";
+		String expectedResult = "Hello Nguyen 1";
 		when(userDao.getUserName("Nguyen")).thenReturn("Hello Nguyen");
 		String actualValue = userService.getUserName("Nguyen");
 		assertEquals(expectedResult,actualValue);
