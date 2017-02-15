@@ -51,9 +51,9 @@
 
 						<div class="form-group">
 							<label for="firstname"><span class="req">* </span> Full
-								name: </label> <input class="form-control" type="text" name="firstname"
+								name: </label> <input class="form-control" type="text" id="f" name="fullname"
 								id="txt" onkeyup="Validate(this)" required />
-							<div id="errFirst"></div>
+							<div id="errFirst"></divullname>
 						</div>
 
 						<div class="form-group">
@@ -66,7 +66,7 @@
 						<div class="form-group">
 							<label for="username"><span class="req">* </span> User
 								name: <small>This will be your login user name</small> </label> <input
-								class="form-control" type="text" name="username" id="txt"
+								class="form-control" type="text" name="username" id="username"
 								onkeyup="Validate(this)" placeholder="minimum 6 letters"
 								required />
 							<div id="errLast"></div>
@@ -76,13 +76,13 @@
 							<label for="password"><span class="req">* </span>
 								Password: </label> <input required name="password" type="password"
 								class="form-control inputpass" minlength="4" maxlength="16"
-								id="pass1" />
+								id="password" />
 							</p>
 
 							<label for="password"><span class="req">* </span>
 								Password Confirm: </label> <input required name="password"
 								type="password" class="form-control inputpass" minlength="4"
-								maxlength="16" placeholder="Enter again to validate" id="pass2"
+								maxlength="16" placeholder="Enter again to validate" id="repassword"
 								onkeyup="checkPass(); return false;" /> <span
 								id="confirmMessage" class="confirmMessage"></span>
 						</div>
@@ -95,7 +95,7 @@
 								name="activate" />
 							<hr>
 
-							<input type="checkbox" required name="terms"
+							<input type="checkbox" required name="terms" id="agree"
 								onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');"
 								id="field_terms">   <label for="terms">I agree
 								with the <a href="terms.php"
@@ -105,7 +105,7 @@
 						</div>
 
 						<div class="form-group">
-							<input class="btn btn-success" onclick="getUserName()" name="submit_reg"
+							<input class="btn btn-success" id="register" onclick="getUserName()" name="submit_reg"
 								value="Register">
 						</div>
 						<h5>You will receive an email to complete the registration
