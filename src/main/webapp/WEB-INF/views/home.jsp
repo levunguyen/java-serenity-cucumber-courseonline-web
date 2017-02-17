@@ -16,29 +16,13 @@
 
 </head>
 <body>
-
-	<!-- <form class="form-inline">
-		<div class="form-group">
-			<label class="sr-only" for="exampleInputAmount">Amount (in
-				dollars)</label>
-			<div class="input-group">
-				<div class="input-group-addon">abc@zyz.com</div>
-				<input type="text" class="form-control" id="email"
-					placeholder="Email">
-			</div>
-		</div>
-		<button type="button" class="btn btn-primary" onclick="getUserName()">Get User Name</button>
-		Result NGUYEN
-		<div id="result"></div>
-	</form>
--->
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<form action="" method="post" id="fileForm" role="form">
+				<form action="/java-demo-ci-web/course" method="get" id="fileForm" role="form">
 					<fieldset>
 						<legend class="text-center">
-							Car Registration *</small></span>
+							Course Registration *</small></span>
 						</legend>
 
 						<div class="form-group">
@@ -74,7 +58,8 @@
 
 						<div class="form-group">
 							<label for="password"><span class="req">* </span>
-								Password: </label> <input required name="password" type="password"
+								Password: </label> 
+								<input required name="password" type="password"
 								class="form-control inputpass" minlength="4" maxlength="16"
 								id="password" />
 							</p>
@@ -105,7 +90,7 @@
 						</div>
 
 						<div class="form-group">
-							<input class="btn btn-success" id="register" onclick="getUserName()" name="submit_reg"
+							<input class="btn btn-success" id="register" type="submit" name="submit_reg"
 								value="Register">
 						</div>
 						<h5>You will receive an email to complete the registration
@@ -136,10 +121,9 @@
 
 
 <script type="text/javascript">
-	function getUserName() {
-		var test = $("#email").val();
-		alert(test);
-		$("#result").html("Nguyen");
+	function payment() {
+		 var ctx = "<%=request.getContextPath()%>";
+		 alert("ctx ss",ctx);
 	}
 </script>
 

@@ -12,12 +12,20 @@ public class HomeController {
 
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public ModelAndView setupForm() {
+	public ModelAndView home() {
 		
 		ModelAndView model = new ModelAndView("home");
 		return model;
 
 	}
+	
+	@RequestMapping(value = "/course", method = RequestMethod.GET)
+	public ModelAndView courseDetails() {
+		ModelAndView model = new ModelAndView("course");
+		return model;
+		
+	}
+	
 	
 	
 
