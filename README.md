@@ -10,5 +10,5 @@
 * Creating a war file by using command mvn clean install
 * Copy war file to Tomcat server on folder webapp
 * Start tomcat server
-* Open Application http://localhost:8080/
+* Open Application http://localhost:8080/java-demo-ci-web
 
