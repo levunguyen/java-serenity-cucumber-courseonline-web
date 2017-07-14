@@ -6,6 +6,7 @@
 * Install maven3
 * Install tomcat 8
 ### Deployment
+* Git clone the application
 * Creating a war file by using command mvn clean install
 * Copy war file to Tomcat server on folder webapp
 * Start tomcat server
